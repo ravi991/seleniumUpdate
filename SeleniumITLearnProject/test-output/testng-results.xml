@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-11T00:32:56 GMT-04:00" name="Default suite" finished-at="2022-09-11T00:34:46 GMT-04:00" duration-ms="109800">
+  <suite started-at="2022-09-15T11:16:18 GMT-04:00" name="Default suite" finished-at="2022-09-15T11:19:05 GMT-04:00" duration-ms="166800">
     <groups>
     </groups>
-    <test started-at="2022-09-11T00:32:56 GMT-04:00" name="Default test" finished-at="2022-09-11T00:34:46 GMT-04:00" duration-ms="109800">
+    <test started-at="2022-09-15T11:16:18 GMT-04:00" name="Default test" finished-at="2022-09-15T11:19:05 GMT-04:00" duration-ms="166800">
       <class name="seleniumPackage.LoginPage">
-        <test-method is-config="true" signature="setPath()[pri:0, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-11T00:32:56 GMT-04:00" name="setPath" finished-at="2022-09-11T00:33:12 GMT-04:00" duration-ms="15460" status="PASS">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:16:18 GMT-04:00" name="setPath" finished-at="2022-09-15T11:16:42 GMT-04:00" duration-ms="24404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPath -->
-        <test-method signature="loginDetails()[pri:1, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-11T00:33:12 GMT-04:00" name="loginDetails" finished-at="2022-09-11T00:33:17 GMT-04:00" duration-ms="5110" status="PASS">
+        <test-method signature="loginDetails()[pri:1, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:16:42 GMT-04:00" name="loginDetails" finished-at="2022-09-15T11:16:48 GMT-04:00" duration-ms="5193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDetails -->
-        <test-method signature="coursesSearch()[pri:2, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-11T00:33:17 GMT-04:00" name="coursesSearch" finished-at="2022-09-11T00:33:35 GMT-04:00" duration-ms="17778" status="PASS">
+        <test-method signature="coursesSearch()[pri:2, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:16:48 GMT-04:00" name="coursesSearch" finished-at="2022-09-15T11:17:05 GMT-04:00" duration-ms="17643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- coursesSearch -->
-        <test-method signature="dashboardPage()[pri:3, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-11T00:33:35 GMT-04:00" name="dashboardPage" finished-at="2022-09-11T00:33:48 GMT-04:00" duration-ms="13212" status="PASS">
+        <test-method signature="dashboardPage()[pri:3, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:17:05 GMT-04:00" name="dashboardPage" finished-at="2022-09-15T11:17:47 GMT-04:00" duration-ms="41677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboardPage -->
-        <test-method signature="courseOption()[pri:4, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-11T00:33:48 GMT-04:00" name="courseOption" finished-at="2022-09-11T00:34:46 GMT-04:00" duration-ms="57679" status="PASS">
+        <test-method signature="courseOption()[pri:4, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:17:47 GMT-04:00" name="courseOption" finished-at="2022-09-15T11:19:05 GMT-04:00" duration-ms="77686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- courseOption -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-11T00:34:46 GMT-04:00" name="closeDriver" finished-at="2022-09-11T00:34:46 GMT-04:00" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:19:05 GMT-04:00" name="closeDriver" finished-at="2022-09-15T11:19:05 GMT-04:00" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
