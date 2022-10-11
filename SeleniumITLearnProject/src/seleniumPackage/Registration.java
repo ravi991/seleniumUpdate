@@ -14,7 +14,7 @@ public class Registration {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		ChromeDriver browserObject = new ChromeDriver();
-		browserObject.get("https://www.itlearn360.com/");
+		browserObject.get("http://demo.itlearn360.com/");
 		browserObject.manage().window().maximize();
 		browserObject.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS) ;
     	JavascriptExecutor js = (JavascriptExecutor) browserObject;
@@ -30,13 +30,6 @@ public class Registration {
     	browserObject.findElement(By.name("country")).sendKeys("USA");
     	browserObject.findElement(By.name("contactno")).sendKeys("8899999900");
     	
-
-    	 
-    	 JavascriptExecutor javascript = (JavascriptExecutor) browserObject;
-    	  String todisable = "document.getElementsByName('captcha')[0].setAttribute('disabled', '')";
-    	  System.out.println(todisable);
-    	  javascript.executeScript(todisable);
-//    	browserObject.findElement(By.name("captcha")).sendKeys("10");
     	browserObject.findElement(By.name("wp-submit")).click();
     
 	}
