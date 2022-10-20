@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-15T11:16:18 GMT-04:00" name="Default suite" finished-at="2022-09-15T11:19:05 GMT-04:00" duration-ms="166800">
+  <suite started-at="2022-10-20T16:54:43 GMT-04:00" name="Default suite" finished-at="2022-10-20T16:55:49 GMT-04:00" duration-ms="66436">
     <groups>
     </groups>
-    <test started-at="2022-09-15T11:16:18 GMT-04:00" name="Default test" finished-at="2022-09-15T11:19:05 GMT-04:00" duration-ms="166800">
+    <test started-at="2022-10-20T16:54:43 GMT-04:00" name="Default test" finished-at="2022-10-20T16:55:49 GMT-04:00" duration-ms="66436">
       <class name="seleniumPackage.LoginPage">
-        <test-method is-config="true" signature="setPath()[pri:0, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:16:18 GMT-04:00" name="setPath" finished-at="2022-09-15T11:16:42 GMT-04:00" duration-ms="24404" status="PASS">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:seleniumPackage.LoginPage@fa49800]" started-at="2022-10-20T16:54:43 GMT-04:00" name="setPath" finished-at="2022-10-20T16:55:19 GMT-04:00" duration-ms="36130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPath -->
-        <test-method signature="loginDetails()[pri:1, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:16:42 GMT-04:00" name="loginDetails" finished-at="2022-09-15T11:16:48 GMT-04:00" duration-ms="5193" status="PASS">
+        <test-method signature="loginDetails()[pri:1, instance:seleniumPackage.LoginPage@fa49800]" started-at="2022-10-20T16:55:19 GMT-04:00" name="loginDetails" finished-at="2022-10-20T16:55:26 GMT-04:00" duration-ms="7435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDetails -->
-        <test-method signature="coursesSearch()[pri:2, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:16:48 GMT-04:00" name="coursesSearch" finished-at="2022-09-15T11:17:05 GMT-04:00" duration-ms="17643" status="PASS">
+        <test-method signature="coursesSearch()[pri:2, instance:seleniumPackage.LoginPage@fa49800]" started-at="2022-10-20T16:55:26 GMT-04:00" name="coursesSearch" finished-at="2022-10-20T16:55:32 GMT-04:00" duration-ms="5883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- coursesSearch -->
-        <test-method signature="dashboardPage()[pri:3, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:17:05 GMT-04:00" name="dashboardPage" finished-at="2022-09-15T11:17:47 GMT-04:00" duration-ms="41677" status="PASS">
+        <test-method signature="dashboardPage()[pri:3, instance:seleniumPackage.LoginPage@fa49800]" started-at="2022-10-20T16:55:32 GMT-04:00" name="dashboardPage" finished-at="2022-10-20T16:55:41 GMT-04:00" duration-ms="8233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboardPage -->
-        <test-method signature="courseOption()[pri:4, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:17:47 GMT-04:00" name="courseOption" finished-at="2022-09-15T11:19:05 GMT-04:00" duration-ms="77686" status="PASS">
+        <test-method signature="offeredAcademices()[pri:4, instance:seleniumPackage.LoginPage@fa49800]" started-at="2022-10-20T16:55:41 GMT-04:00" name="offeredAcademices" finished-at="2022-10-20T16:55:47 GMT-04:00" duration-ms="6711" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- courseOption -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:seleniumPackage.LoginPage@662b4c69]" started-at="2022-09-15T11:19:05 GMT-04:00" name="closeDriver" finished-at="2022-09-15T11:19:05 GMT-04:00" duration-ms="142" status="PASS">
+        </test-method> <!-- offeredAcademices -->
+        <test-method signature="payment()[pri:5, instance:seleniumPackage.LoginPage@fa49800]" started-at="2022-10-20T16:55:47 GMT-04:00" name="payment" finished-at="2022-10-20T16:55:49 GMT-04:00" duration-ms="1607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payment -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:seleniumPackage.LoginPage@fa49800]" started-at="2022-10-20T16:55:49 GMT-04:00" name="closeDriver" finished-at="2022-10-20T16:55:49 GMT-04:00" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->

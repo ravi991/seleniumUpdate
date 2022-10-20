@@ -5,12 +5,9 @@
     <classes>
       <class name="seleniumPackage.LoginPage">
         <methods>
-          <include name="coursesSearch"/>
+          <include name="payment"/>
           <include name="setPath"/>
-          <include name="loginDetails"/>
           <include name="closeDriver"/>
-          <include name="courseOption"/>
-          <include name="dashboardPage"/>
         </methods>
       </class> <!-- seleniumPackage.LoginPage -->
     </classes>

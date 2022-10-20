@@ -7,23 +7,25 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class LoginPage {
+public class ITLearn {
 	WebDriver browserObject ;
 		@BeforeTest
 		public void setPath()
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 			 browserObject = new ChromeDriver();
-			browserObject.get("https://www.itlearn360.com/");
+			browserObject.get("http://demo.itlearn360.com/");
 			
+			browserObject.manage().window().maximize();
 		}
 		
 		@Test(priority =1)
@@ -41,7 +43,7 @@ public class LoginPage {
 		public void coursesSearch()
 		{
 			// Search Courses 
-			browserObject.findElement(By.name("search_course")).sendKeys("Automation with Selenium WebDriver ");
+			browserObject.findElement(By.name("search_course")).sendKeys("Automation Testing with Junit");
 			browserObject.findElement(By.xpath("//*[@id=\"primary_menu\"]/nav[1]/form/button")).click();
 			
 			browserObject.navigate().back();
@@ -58,15 +60,32 @@ public class LoginPage {
 			Assert.assertEquals(actualValue, expectedValue);
 		}
 		
-		@Test(priority =4)
-		public void courseOption()
-		{
-			browserObject.findElement(By.xpath("//*[@id=\"learn-press-user-profile\"]/ul/li[2]/a")).click();
-			browserObject.findElement(By.xpath("//*[@id=\"mc\"]/div/ul/li[1]/a[1]/h3")).click();
-			browserObject.navigate().back();
-			browserObject.findElement(By.className("btn-primary")).click();
 
+		@Test(priority =4)
+		public void offeredAcademices()
+		{
+			browserObject.findElement(By.xpath("//*[@id=\"learn-press-user-profile\"]/ul/li[3]")).click();
 			
+			browserObject.findElement(By.xpath("//*[@id=\"tab-academies\"]/div/div/ul/li[1]/form/div/button")).click();
+		}
+		
+		@Test(priority =5)
+		public void payment()
+		{
+			browserObject.findElement(By.xpath("//*[@id=\"learn-press-payment\"]/ul/li/label")).click();
+			
+			browserObject.findElement(By.xpath("//*[@id=\"learn-press-checkout-place-order\"]")).submit();
+			
+			WebElement cn = browserObject.findElement(By.xpath("//*[@id=\"card-element\"]/div/iframe"));
+			browserObject.switchTo().frame(cn);
+			
+			browserObject.findElement(By.name("cardnumber")).sendKeys("7732 1231 1988 1211");
+		
+			browserObject.findElement(By.name("exp-date")).sendKeys("11/24");
+			
+			browserObject.findElement(By.name("cvc")).sendKeys("121");
+		
+//			browserObject.findElement(By.xpath("//*[@id=\"payment-button\"]")).click();
 		}
 		@AfterTest
 		public void closeDriver()

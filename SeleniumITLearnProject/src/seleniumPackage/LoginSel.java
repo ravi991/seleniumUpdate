@@ -13,7 +13,7 @@ public class LoginSel {
 		ChromeDriver browserObject = new ChromeDriver();
 		browserObject.get("https://www.itlearn360.com/");
 		
-browserObject.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+      browserObject.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		browserObject.findElement(By.id("loginlabel")).click();
 		
 		browserObject.findElement(By.name("log")).sendKeys("raviranjancs");
