@@ -17,7 +17,7 @@ public class CalcultorTest {
 	static AppiumDriver driver;
 	
 	
-
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args)  {
 		// TODO Auto-generated method stub
 		try {
@@ -34,13 +34,12 @@ public class CalcultorTest {
 	{
 		DesiredCapabilities cap= new DesiredCapabilities();
 		
-		cap.setCapability("Device Name ", "Ravi's POCO X3");
-		cap.setCapability("udid", "e4ca8975");
-		cap.setCapability("platformName", "Android");
-		cap.setCapability("platformVersion", "12.5.7");
 		
-		cap.setCapability("appPackage", "com.miui.compass");
-		cap.setCapability("appActivity", "com.miui.compass.CompassActivity");
+		cap.setCapability("udid", "emulator-5554");
+		cap.setCapability("platformName", "Android");
+		
+		
+
 		
 		
 		driver= new AppiumDriver( new URL("http://127.0.0.1:4723/wd/hub"),cap);

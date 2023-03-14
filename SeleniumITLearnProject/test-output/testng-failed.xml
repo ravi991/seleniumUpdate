@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumPackage.LoginPage">
+      <class name="seleniumPackage.ITLearn">
         <methods>
+          <include name="closeDriver"/>
           <include name="payment"/>
           <include name="setPath"/>
-          <include name="closeDriver"/>
         </methods>
-      </class> <!-- seleniumPackage.LoginPage -->
+      </class> <!-- seleniumPackage.ITLearn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

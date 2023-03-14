@@ -4,13 +4,10 @@ package seleniumPackage;
 
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -26,12 +23,13 @@ public class ITLearn {
 			browserObject.get("http://demo.itlearn360.com/");
 			
 			browserObject.manage().window().maximize();
+	browserObject.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS) ;
 		}
 		
 		@Test(priority =1)
 		public void loginDetails()
 		{
-			browserObject.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+			
 			browserObject.findElement(By.id("loginlabel")).click();
 			
 			browserObject.findElement(By.name("log")).sendKeys("raviranjancs");
@@ -62,8 +60,9 @@ public class ITLearn {
 		
 
 		@Test(priority =4)
-		public void offeredAcademices()
+		public void offeredAcademices() throws InterruptedException
 		{
+			Thread.sleep(6000);
 			browserObject.findElement(By.xpath("//*[@id=\"learn-press-user-profile\"]/ul/li[3]")).click();
 			
 			browserObject.findElement(By.xpath("//*[@id=\"tab-academies\"]/div/div/ul/li[1]/form/div/button")).click();
@@ -85,7 +84,7 @@ public class ITLearn {
 			
 			browserObject.findElement(By.name("cvc")).sendKeys("121");
 		
-//			browserObject.findElement(By.xpath("//*[@id=\"payment-button\"]")).click();
+			browserObject.findElement(By.xpath("//*[@id=\"payment-button\"]")).click();
 		}
 		@AfterTest
 		public void closeDriver()
